@@ -6,7 +6,7 @@ export LFS_DISK=/dev/nvme0n1
 
 if ! grep -q $LFS /proc/mounts; then
     source setupdisk.sh "$LFS_DISK"
-    sudo mount "${LFS_DISK}2" "$LFS"
+    sudo mount "${LFS_DISK}p2" "$LFS"
     sudo chown -v $USER "$LFS"
 fi
 
