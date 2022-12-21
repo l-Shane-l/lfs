@@ -21,4 +21,4 @@ q
 EOF
 
 sudo mkfs -t ext2 -F "${LFS_DISK}p1"
-sudo mkfs -t ext2 -F "${LFS_DISK}p2"
+sudo mkfs -t ext4 -F "${LFS_DISK}p2"
